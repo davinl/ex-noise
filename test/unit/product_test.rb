@@ -6,7 +6,7 @@ class ProductTest < ActiveSupport::TestCase
   # end
   
   def test_price_must_be_greater_than_0
-    p = Product.new(:price => -1)
+    p = Product.new(:name => "In On the Kill Taker", :price => -1)
     assert_equal false, p.valid?
     p.price = 0
     assert_equal false, p.valid?
@@ -17,5 +17,7 @@ class ProductTest < ActiveSupport::TestCase
   def test_name_cannot_be_blank
     p = Product.new(:price => 10)
     assert_equal false, p.valid?
+    p.name = "Strings of Life"
+    assert p.valid?
   end
 end
