@@ -37,9 +37,9 @@ production:
   #   BUNDLE_WITHOUT: "development:test"
   #   GOOGLE_ANALYTICS: "UA-12345678-1"
 
-staging:
+review:
   stack: cedar
-  app: enoise-staging
+  app: enoise-review
   # config: &default
   #   BUNDLE_WITHOUT: "development:test"
 
