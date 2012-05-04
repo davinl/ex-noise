@@ -41,6 +41,8 @@ test:
   encoding: unicode
   database: enoise_test
   pool: 5
+  username: enoise_test
+  password: extra_secret
 
 # production:
 #   adapter: postgresql
