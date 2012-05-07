@@ -15,9 +15,17 @@ class ProductTest < ActiveSupport::TestCase
   end
   
   def test_name_cannot_be_blank
-    p = Product.new(:price => 10)
+    p = Product.new(:price => 10, :format => '12"')
     assert_equal false, p.valid?
     p.name = "Strings of Life"
     assert p.valid?
   end
+  
+  def test_formate_cannot_be_blank
+    p = Product.new(:price => 12, :name => 'All Hail West Texas')
+    assert_equal false, p.valid?
+    p.format = "CD"
+    assert p.valid?
+  end
+  
 end
