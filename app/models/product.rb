@@ -4,6 +4,6 @@ class Product < ActiveRecord::Base
                             :if => :price,
                             :greater_than => 0
                             
-  validates_presence_of     :name
+  validates_presence_of     :name, :format
 
 end
