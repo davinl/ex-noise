@@ -44,10 +44,10 @@ test:
   username: enoise_test
   password: extra_secret
 
-# production:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: enoise_production
-#   pool: 5
-#   username: enoise_owner
-#   password: 
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: enoise_production
+  pool: 5
+  username: enoise_owner
+  password: extra_secret
