@@ -3,7 +3,9 @@
 one:
   name: MyText
   price: 9.99
+  format: LP
 
 two:
   name: MyText
   price: 9.99
+  format: CD
