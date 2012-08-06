@@ -25,7 +25,7 @@ namespace :tddium do
     end
 
     puts "Building Assets"
-    cmd "RAILS_ENV=production bundle exec rake assets:precompile"
+    cmd "rake assets:precompile"
     
     puts "Staging Assets"
     cmd "git add ."
