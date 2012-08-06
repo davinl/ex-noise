@@ -26,6 +26,9 @@ namespace :tddium do
 
     puts "Building Assets"
     cmd "RAILS_ENV=production bundle exec rake assets:precompile"
+    
+    puts "commiting assets so they can be pushed to heroku"
+    cmd "git commit -a"
 
     puts "Pushing to Heroku: #{push_target}..."
     cmd "git push #{push_target} #{current_branch}:master --force" or fail "could not push to #{push_target}"
