@@ -24,6 +24,9 @@ namespace :tddium do
       f.write("\n")
     end
 
+    puts "Building Assets"
+    cmd "RAILS_ENV=production bundle exec rake assets:precompile"
+
     puts "Pushing to Heroku: #{push_target}..."
     cmd "git push #{push_target} #{current_branch}:master --force" or fail "could not push to #{push_target}"
 
