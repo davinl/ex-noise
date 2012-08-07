@@ -8,11 +8,11 @@
 
 <% @formats.each do |format| %>
   <tr>
-    <td><%= product.name %></td>
-    <td><%= product.abbreviation %></td>
-    <td><%= link_to 'Show', product %></td>
-    <td><%= link_to 'Edit', edit_product_path(product) %></td>
-    <td><%= link_to 'Destroy', product, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= format.name %></td>
+    <td><%= format.abbreviation %></td>
+    <td><%= link_to 'Show', format %></td>
+    <td><%= link_to 'Edit', edit_format_path(format) %></td>
+    <td><%= link_to 'Destroy', format, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>

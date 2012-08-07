@@ -1,5 +1,6 @@
 Enoise::Application.routes.draw do
   resources :products
+  resources :formats
 
   root :to => 'products#index'
 
