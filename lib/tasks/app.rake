@@ -15,3 +15,4 @@ namespace :db do
       puts "Loaded #{fixture}"
     end
   end
+end
