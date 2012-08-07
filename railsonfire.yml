@@ -1,0 +1,18 @@
+--- 
+id: ec33a150-c2fd-012f-b7d0-12313d1a828c
+setup:
+  commands:
+  - bundle install --without production
+  - bundle exec rake db:migrate --trace
+test:
+  commands:
+  - bundle exec rake
+deploy:
+  heroku:
+    staging:
+      name: ""
+    production:
+      name: enoise-demo
+      backup: false
+ruby_versions:
+- 1.9.2
