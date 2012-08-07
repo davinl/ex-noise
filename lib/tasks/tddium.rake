@@ -38,5 +38,9 @@ namespace :tddium do
 
     puts "Running Heroku Migrations..."
     cmd "heroku run rake db:migrate --trace --app #{app_name}" or fail "failed to run migrations"
+    
+    puts "Running Populate on Heroku..."
+    cmd "heroku run rake db:populate --trace --app #{app_name}" or fail "failed to run populations"
+    
   end
 end

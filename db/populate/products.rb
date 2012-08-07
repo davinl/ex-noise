@@ -1,0 +1,1 @@
+Product.create_or_update(:id => 123123, :name => 'Substance', :price => 12, :format => 'LP')
