@@ -13,6 +13,8 @@ deploy:
       name: ""
     production:
       name: enoise-demo
+      branch: dev
       backup: false
+      migrate: true
 ruby_versions:
 - 1.9.2
