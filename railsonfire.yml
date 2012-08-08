@@ -16,5 +16,7 @@ deploy:
       branch: dev
       backup: false
       migrate: true
+      commands:
+        - heroku run rake db:populate --trace --app enoise-demo
 ruby_versions:
 - 1.9.2
